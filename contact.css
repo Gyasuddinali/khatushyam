@@ -1,0 +1,123 @@
+.form-control{
+       border-bottom:2px solid;
+       border-top: none;
+       border-left: none;
+       border-right: none;
+}
+
+.form-control:hover{
+    background-color: rgba(0, 255, 255, 0.205);
+ 
+}
+
+ .fa{
+    background-color: red;
+     border-radius: 50px;
+    }
+.fas{
+    background-color: red;
+     border-radius: 50px; 
+}
+
+.fab:hover{
+  color: #ffd700;
+}
+
+    .nav-item{
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), 
+              box-shadow 0.3s ease, 
+              background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 12px;      
+  overflow: hidden;         
+}
+
+button{
+  
+color: black;
+}
+
+.active {
+  color: #ff4d4d;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid #ff4d4d;
+}
+
+.btnnav span{
+  color: black;
+}
+
+
+/* li:hover { */
+.nav-item:hover{
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 0 20px rgba(255, 255, 255, 0.15);
+  background-color: #1a007a;
+}
+
+li span {
+  transition: color 0.3s ease;
+}
+
+li:hover span {
+  color: #ffd700;
+}
+#langToggleBtn:hover {
+  color: #ffd700;
+}
+
+#pay:hover {
+  color: #ffd700;
+}
+#pay {
+  color: white;
+}
+
+/* for cross humar */
+
+
+.custom-toggler {
+  border: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: none;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  transition: background-color 0.2s ease;
+}
+
+.custom-toggler .navbar-toggler-icon::before,
+.custom-toggler .navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  left: 0;
+  transition: transform 0.2s ease;
+}
+
+.custom-toggler .navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.custom-toggler .navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* When menu is open → CROSS */
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}

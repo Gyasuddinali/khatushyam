@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link href="payment.css" rel="stylesheet">
+<link href="whatsapp.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top"
+     style="background-color: rgb(238, 238, 238);">
+
+    <div class="container" style="background-color: rgb(238, 238, 238);">
+    <a class="navbar-brand d-flex pt-0 pb-0" href="index.html">
+      <img class="pt-0 pb-0" src="KCB.png" width="200" style="height: 70px;" >
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon" style="color: black;"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto" >
+        <li class="nav-item"><a class="nav-link" href="index.html" style="color: black; font-size: medium;">Home</a></li>
+       <li class="nav-item"><a class="nav-link" href="#" style="color: black; font-size: medium;">Project</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="#" style="color: black; font-size: medium;">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" style="color: black; font-size: medium;">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" style="color: black; font-size: medium;">Contact</a></li>
+
+    </ul>
+    </div>
+  </div>
+</nav> -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top"
+     style="background-color: rgb(238, 238, 238);">
+
+  <div class="container">
+    <a class="navbar-brand d-flex pt-0 pb-0" href="index.html">
+      <img class="pt-0 pb-0" src="KCB.png" width="200" style="height: 70px;">
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon" style="color: black;"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" style="color: black; font-size: medium;">
+            <span data-en="Home" data-hi="होम"></span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="project.html" style="color: black; font-size: medium;">
+            <span data-en="Project" data-hi="परियोजना"></span>
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" style="color: black; font-size: medium;">
+            <span data-en="About Us" data-hi="हमारे बारे में"></span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" style="color: black; font-size: medium;">
+            <span data-en="Contact" data-hi="संपर्क करें"></span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link btnnav active" href="payment.html">
+            <span data-en="Book Now" data-hi="अभी बुक करें"></span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <button id="langToggleBtn" class="btn">
+            English
+          </button>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<a href="https://wa.me/917290039686"
+   class="whatsapp-float"
+   target="_blank"
+ >
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<div class="container my-5 pt-5 mb-0">
+  <h1 class="text-center text-danger fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
+    <span data-en="Payment & Booking" data-hi="भुगतान और बुकिंग"></span>
+  </h1>
+  <h5 class="text-center mb-4" style="font-family: 'Playfair Display', serif;">
+    <span data-en="Secure Your Plot Today" data-hi="आज ही अपना प्लॉट सुरक्षित करें"></span>
+  </h5>
+
+  <div class="row justify-content-center">
+
+    <div class="col-lg-6 col-md-8 col-12 mb-3">
+      <div class="p-3 rounded shadow-sm text-center" style="background-color: #e0f7fa;">
+        <h5 class="fw-bold text-dark mb-2">
+          <span data-en="Step 1: Fill Online Form" data-hi="चरण 1: ऑनलाइन फॉर्म भरें"></span>
+        </h5>
+        <p class="text-dark">
+          <span data-en="Complete the online booking form with accurate details." data-hi="सटीक विवरण के साथ ऑनलाइन बुकिंग फॉर्म पूरा करें।"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-8 col-12 mb-3">
+      <div class="p-3 rounded shadow-sm text-center" style="background-color: #ffe0b2;">
+        <h5 class="fw-bold text-dark mb-2">
+          <span data-en="Step 2: Deposit ₹2,000" data-hi="चरण 2: ₹2,000 जमा करें"></span>
+        </h5>
+        <p class="text-dark">
+          <span data-en="Deposit ₹2,000 to the Paytm account as the booking amount." data-hi="बुकिंग राशि के रूप में ₹2,000 Paytm खाते में जमा करें।"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-8 col-12 mb-3">
+      <div class="p-3 rounded shadow-sm text-center" style="background-color: #dcedc8;">
+        <h5 class="fw-bold text-dark mb-2">
+          <span data-en="Step 3: Receive Confirmation" data-hi="चरण 3: पुष्टिकरण प्राप्त करें"></span>
+        </h5>
+        <p class="text-dark">
+          <span data-en="After successful payment, receive online confirmation of your plot booking." data-hi="सफल भुगतान के बाद, अपने प्लॉट बुकिंग का ऑनलाइन पुष्टिकरण प्राप्त करें।"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-8 col-12 mb-3">
+      <div class="p-3 rounded shadow-sm text-center" style="background-color: #f8bbd0;">
+        <h5 class="fw-bold text-dark mb-2">
+          <span data-en="Step 4: Participate in Plot Draw" data-hi="चरण 4: प्लॉट ड्रॉ में भाग लें"></span>
+        </h5>
+        <p class="text-dark">
+          <span data-en="Plots will be allotted to 180 people through a draw after booking." data-hi="बुकिंग के बाद 180 लोगों को ड्रॉ के माध्यम से प्लॉट आवंटित किए जाएंगे।"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-8 col-12 mb-3">
+      <div class="p-3 rounded shadow-sm text-center" style="background-color: #c8e6c9;">
+        <h5 class="fw-bold text-dark mb-2">
+          <span data-en="Step 5: Registry & Possession" data-hi="चरण 5: रजिस्ट्री और कब्जा"></span>
+        </h5>
+        <p class="text-dark">
+          <span data-en="Complete registry within 15 days to 1 month and take possession immediately." data-hi="15 दिन से 1 महीने के भीतर रजिस्ट्री पूरी करें और तुरंत कब्जा लें।"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-8 col-12 mb-3">
+      <div class="p-3 rounded shadow-sm text-center" style="background-color: #fff9c4;">
+        <h5 class="fw-bold text-dark mb-2">
+          <span data-en="Step 6: Start Construction" data-hi="चरण 6: निर्माण शुरू करें"></span>
+        </h5>
+        <p class="text-dark">
+          <span data-en="After possession, start construction immediately on your plot." data-hi="कब्जा लेने के बाद, अपने प्लॉट पर तुरंत निर्माण शुरू करें।"></span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container mb-2 bg rounded"  >
+<div class="row">
+
+    <div class="col-lg-6 paybg item-align-center rounded-3 pb-2">
+        <h1 class="text-white text-center mt-2 mb-2" style="font-family: playfair;">Payment Form</h1>
+        <div class="container">
+            <form class="form text-white">
+                <div class="col-12 mt-2 mb-2">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter Your Full Name" required>
+                </div>
+
+                <!-- <div class="col-12 mt-2 mb-2">
+                    <label class="form-label">Guardian Name</label>
+                    <input type="text" name="guardian_name" placeholder="Your Guardian Name" class="form-control">
+                </div> -->
+
+                <div class="col-12 mt-2 mb-2">
+                    <label class="form-label">Email</label>
+                    <input class="form-control" name="email" placeholder="Enter Your Email" type="email" required>
+                </div>
+
+                <div>
+                    <label class="form-label">Mobile Number</label>
+                    <input type="number" name="phone" class="form-control" placeholder="Enter Your Mobile Number" required>
+                </div>
+
+                <div class="col-12 mt-2 mb-2">
+                    <label class="form-label">Permament Address</label>
+                    <input name="address" class="form-control" placeholder="Permament Address" required name="address" type="text">
+                </div>
+
+                <div class="col-12 mt-2 mb-2">
+                    <label class="form-label">ADHAAR</label>
+                    <input class="form-control" placeholder="Enter Your ADHAAR Number" required type="number" name="adhar_num">
+                </div>
+
+                <div class="col-12 mt-2 mb-2">
+                    <label class="form-label">PAN Number</label>
+                    <input type="text" class="form-control" placeholder="Enter Pan Number" required name="pancard">
+                </div>
+
+                <div class="col-12 mt-2 mb-2">
+                  
+                  <label class="form-label">UTR Number</label>
+                  <input type="text" name="utr" class="form-control" required placeholder="Please Enter your UTR/Reference Number">
+                </div>
+               
+
+<button type="submit" class="btn rounded-pill text-white" style="background-color: red;">Payment Now</button>
+
+<!-- <button 
+  type="button"
+  class="btn btn-outline-danger rounded-pill text-white"
+  data-bs-toggle="modal"
+  data-bs-target="#payment">
+  Payment Now
+</button> -->
+
+            </form>
+
+        </div>
+
+    </div>
+
+<div class="col-lg-6 bg1">
+<h1 class="text-center text-white mt-2 mb-2" style="font-family: playfair;">Scan And Pay</h1>
+    <div class="container-fluid rounded-3">
+        <img class="img-fluid rounded-3 mt-5" src="scanner.png" style="height: 350px; width: 100%;">
+<div class="container bg-white pb-2">
+        <h4 class="text-center " style="font-family: playfair;">You Can Also Pay By Account Number</h4>
+        <h5 class="text-center pt-3" style="font-family: playfair;">
+<i class="fas fa-university bg-white" style="color: red;"></i>
+
+IFSC:INDB0001358</h5>
+        <h5 class="text-center pt-3" style="font-family: playfair;"> 
+          <i class="fas fa-credit-card bg-white" style="color: red;"></i> Account:259266889138</h5>
+</div>
+      </div>
+</div>
+
+
+
+</div>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+
+<!--model for payment-->
+<!-- <div class="modal fade" id="payment" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4"> -->
+<div class="modal" id="payment">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Payment By QR Code or Passbook</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img class="img-fluid" src="scanner.png" style="height: 350px; width: 100%;">
+        <!-- <form>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Mobile Number</label>
+            <input type="tel" class="form-control" placeholder="Enter mobile number">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Amount</label>
+            <input type="number" class="form-control" placeholder="Enter amount">
+          </div>
+
+          <button type="submit" class="btn btn-danger w-100 rounded-pill">
+            Proceed to Pay
+          </button>
+        </form> -->
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+<footer class="bg-dark text-white pt-5 pb-3 ">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 mb-4">
+        <h5 style="font-family: 'Playfair Display', serif; color: white;">
+          <span data-en="About Us" data-hi="हमारे बारे में"></span>
+        </h5>
+        <p style="font-size: 14px;">
+          <span data-en="Shyamji Plot Allotment Scheme offers well-planned residential plots with modern infrastructure and easy payment options. Safety and long-term value are prioritized." 
+                data-hi="श्यामजी प्लॉट आवंटन योजना सुव्यवस्थित आवासीय प्लॉट्स, आधुनिक बुनियादी ढांचा और आसान भुगतान विकल्प प्रदान करती है। सुरक्षा और दीर्घकालिक मूल्य को प्राथमिकता दी जाती है।">
+          </span>
+        </p>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <h5 style="font-family: 'Playfair Display', serif; color: white;">
+          <span data-en="Quick Links" data-hi="त्वरित लिंक"></span>
+        </h5>
+       <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white text-decoration-none"><span data-en="Home" data-hi="होम"></span></a></li>
+          <li><a href="about.html" class="text-white text-decoration-none"><span data-en="About" data-hi="के बारे में"></span></a></li>
+          <li><a href="project.html" class="text-white text-decoration-none"><span data-en="Project" data-hi="परियोजना"></span></a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none"><span data-en="Contact" data-hi="संपर्क करें"></span></a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <h5 style="font-family: 'Playfair Display', serif; color: white;">
+          <span data-en="Social Links" data-hi="सोशल लिंक"></span>
+        </h5>
+     <a href="https://www.facebook.com/kcbcolonizers" target="_blank" class="text-white fs-2 me-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/kcbcolonizers" target="_blank" class="text-white fs-2 me-2"><i class="fab fa-instagram"></i></a>
+         <a href="https://twitter.com/kcb_colonizers" class="text-white fs-2 me-2"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/13444207" class="text-white fs-2 me-2"><i class="fab fa-linkedin"></i> </a>
+      
+      </div>
+
+    </div>
+
+
+    
+    <div class="row border-top pt-3 mt-3 align-items-center text-center text-lg-start">
+
+      <div class="col-12 col-lg-6 mb-2 mb-lg-0">
+        &copy; 2026
+        <span data-en="Shyamji Nagari. All rights reserved."
+              data-hi="श्यामजी नगरी। सर्वाधिकार सुरक्षित।"></span>
+      </div>
+
+       <div class="col-12 col-lg-6">
+        <div class="d-flex justify-content-center justify-content-lg-end gap-3">
+          <a href="privacy.html" class=" text-decoration-none" id="pay">Privacy Policy</a>
+          <a href="terms.html" class=" text-decoration-none" id="pay">Terms of Service</a>
+          <a href="refaund.html" class="text-decoration-none" id="pay"> Refund Policy</a>
+        </div>
+      </div>
+
+    </div>
+   
+  </div>
+</footer>
+
+
+<script>
+
+  const elements = document.querySelectorAll('[data-en]');
+  let currentLang = 'en'; 
+  function setLanguage(lang) {
+    elements.forEach(el => {
+      el.textContent = lang === 'hi' ? el.dataset.hi : el.dataset.en;
+    });
+    currentLang = lang;
+    document.getElementById('langToggleBtn').textContent = lang === 'hi' ? 'English' : 'हिन्दी';
+  }
+
+  setLanguage('en');
+
+  document.getElementById('langToggleBtn').addEventListener('click', () => {
+    setLanguage(currentLang === 'hi' ? 'en' : 'hi');
+  });
+
+  const navCollapse = document.getElementById('nav');
+
+  document.addEventListener('click', function(event) {
+    const isNavOpen = navCollapse.classList.contains('show');
+
+    if (isNavOpen && !navCollapse.contains(event.target) && !event.target.closest('.navbar-toggler')) {
+      const bsCollapse = new bootstrap.Collapse(navCollapse, {toggle: true});
+      bsCollapse.hide();
+    }
+  });
+
+</script>
+
+</body>
+</html>

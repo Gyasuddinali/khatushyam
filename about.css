@@ -1,0 +1,68 @@
+
+.im{
+    width: 100;
+     height: 550px;
+    }
+.fa{
+    background-color: red;
+     border-radius: 50px;
+    }
+.fas{
+    background-color: red;
+     border-radius: 50px; 
+}
+
+.fab:hover{
+  color: #ffd700;
+}
+
+    .nav-item{
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), 
+              box-shadow 0.3s ease, 
+              background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 12px;      
+  overflow: hidden;         
+}
+
+button{
+  
+color: black;
+}
+
+.active {
+  color: #ff4d4d;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid #ff4d4d;
+}
+
+
+
+
+/* li:hover { */
+.nav-item:hover{
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 0 20px rgba(255, 255, 255, 0.15);
+  background-color: #1a007a;
+}
+
+li span {
+  transition: color 0.3s ease;
+}
+.btnnav span{
+  color: black;
+}
+li:hover span {
+  color: #ffd700;
+}
+#langToggleBtn:hover {
+  color: #ffd700;
+}
+
+#pay:hover {
+  color: #ffd700;
+}
+#pay {
+  color: white;
+}
